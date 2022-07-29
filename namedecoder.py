@@ -36,7 +36,7 @@ class Solution:
         # type id: string
         # return: string
         # TODO: Write code below to return a string with the solution to the prompt
-        id.split('0')
+        id = id.split('0')
         new_lst = []
         for i in id:
             if len(i) > 0:
