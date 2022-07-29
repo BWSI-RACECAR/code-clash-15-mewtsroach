@@ -41,6 +41,14 @@ class Solution:
         for i in id:
             if len(i) > 0:
                 new_lst.append(i)
+        if len(new_lst) == 2:
+            index = 0
+            for i in new_lst[1]:
+                if i.isdigit():
+                    index = new_lst[1].index(i)
+            str = new_lst[1]
+            new_lst[1] = str.slice(0, index)
+            new_lst[2] = str.slice(index)
         return "First name = " + new_lst[0] + ", Last name = " + new_lst[1] + ", id = " + new_lst[2]
         pass
 
