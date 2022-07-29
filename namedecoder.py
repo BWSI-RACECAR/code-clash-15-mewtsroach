@@ -48,8 +48,8 @@ class Solution:
                     index = new_lst[1].index(i)
                     break
             final_str = new_lst[1]
-            new_lst[1] = final_str.slice(0, index)
-            new_lst.append(final_str.slice(index))
+            new_lst[1] = final_str[0:index]
+            new_lst.append(final_str[index:])
         return "First name = " + new_lst[0] + ", Last name = " + new_lst[1] + ", id = " + new_lst[2]
         pass
 
