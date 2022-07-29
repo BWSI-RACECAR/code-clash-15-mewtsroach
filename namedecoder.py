@@ -46,6 +46,7 @@ class Solution:
             for i in new_lst[1]:
                 if i.isdigit():
                     index = new_lst[1].index(i)
+                    break
             str = new_lst[1]
             new_lst[1] = str.slice(0, index)
             new_lst.append(str.slice(index))
