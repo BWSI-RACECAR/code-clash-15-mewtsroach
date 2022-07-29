@@ -47,9 +47,9 @@ class Solution:
                 if i.isdigit():
                     index = new_lst[1].index(i)
                     break
-            str = new_lst[1]
-            new_lst[1] = str.slice(0, index)
-            new_lst.append(str.slice(index))
+            final_str = new_lst[1]
+            new_lst[1] = final_str.slice(0, index)
+            new_lst.append(final_str.slice(index))
         return "First name = " + new_lst[0] + ", Last name = " + new_lst[1] + ", id = " + new_lst[2]
         pass
 
